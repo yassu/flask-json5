@@ -4,12 +4,12 @@
 
 <form action="/" method="post">
   <textarea placeholder="Json5 Data" rows="15" style="width: 100%;"
-    name="json5_input">{{ json5_input }}</textarea>
+    name="json5_input" id="json5_input">{{ json5_input }}</textarea>
 
   <input type="submit" name="" value="Convert to Json">
 
   <textarea placeholder="Json Data" rows="15" style="width: 100%;"
-    name="output_data" readonly> {{ json_output }} </textarea>
+    name="output_data" id="output_data" readonly> {{ json_output }} </textarea>
 
   {% if error_message != "" %}
   <h3> Errors: </h3>
