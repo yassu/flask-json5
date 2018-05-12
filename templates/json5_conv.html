@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<h3> Json5 Converter </h3>
+<h2> Json5 Converter </h2>
 
 <form action="/" method="post">
   <textarea placeholder="Json5 Data" rows="15" style="width: 100%;"
@@ -10,5 +10,10 @@
 
   <textarea placeholder="Json Data" rows="15" style="width: 100%;"
     name="output_data" readonly> {{ json_output }} </textarea>
+
+  {% if error_message != "" %}
+  <h3> Errors: </h3>
+    {{ error_message }}
+  {% endif %}
 </form>
 {% endblock %}
