@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-    json5_text = request.form.get('single', '')
+    json5_input = request.form.get('json5_input', '')
     return render_template('json5_conv.html', title='flask test')
 
 ## おまじない
