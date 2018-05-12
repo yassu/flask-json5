@@ -20,7 +20,7 @@ def hello():
 
     return render_template(
         'json5_conv.html',
-        title='flask test',
+        title='Json5 Converter',
         json5_input=json5_input,
         json_output=json_output,
         error_message=error_message)
