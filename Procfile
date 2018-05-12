@@ -1,1 +1,1 @@
-web: gunicorn flask-json5:app –log-file
+web: gunicorn flask_json5:app –log-file
