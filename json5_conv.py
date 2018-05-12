@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     name = "Hoge"
-    return render_template('hello.html', title='flask test', name=name)
+    return render_template('json5_conv.html', title='flask test', name=name)
 
 ## おまじない
 if __name__ == "__main__":
