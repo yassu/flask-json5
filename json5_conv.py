@@ -11,6 +11,5 @@ def hello():
         json5_input=json5_input,
         json_output=json_output)
 
-## おまじない
 if __name__ == "__main__":
     app.run(debug=True)
